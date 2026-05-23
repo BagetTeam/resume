@@ -1,0 +1,309 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+ \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{5pt} % Fix footskip warning
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeFourPart}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	\textbf{\Huge \scshape Ewen Gueguen} \\ \vspace{1pt}
+	\small (438) 855-2381 $|$ 
+        \href{mailto:ewen.gueguen@mail.mcgill.ca}{\underline{ewen.gueguen@mail.mcgill.ca}} $|$
+	\href{https://www.linkedin.com/in/ewengueguen}{\underline{linkedin.com/in/ewengueguen}} $|$
+	\href{https://github.com/BagetTeam}{\underline{github.com/BagetTeam}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{McGill University}{December 2027 (Expected)}
+{B.Eng in Software Engineering (Co-op) \textnormal{(GPA: \textbf{3.94})}}{Montreal, QC, Canada}
+\resumeItemListStart
+\resumeItem{\textbf{Honors (2250\$)}: Faculty of Engineering Scholarship, Women Associates Scholarship in Engineering}
+\resumeItem{\textbf{Relevant Coursework}: Data Structure and Algorithms, Model-Based Programming, Software Systems}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Cerence AI}{Jan 2026 - Present}
+{Software Engineering Intern}{Montreal, QC, Canada}
+\resumeItemListStart
+\resumeItem{Integrated \textbf{Python} function tooling in an LLM routing pipeline, cutting latency by 70\% and inference costs by 30\%}
+%\resumeItem{Developed \textbf{Python}-based function tools integrated with an LLM routing pipeline, reducing query latency by 70\% and inference costs by 30\% by replacing raw LLM calls with structured function execution}
+\resumeItem{Enhanced LLM routing accuracy and efficiency by 35\%+ through optimized categorization and tool selection rules}
+\resumeItem{Built scalable benchmarking and data validation pipelines, automating 20,000+ test cases for system reliability}
+\resumeItem{Built a deployment pipeline with \textbf{Python} and \textbf{GitLab CI/CD}, speeding up release tagging and versioning by 85\%}
+%\resumeItem{Built automated data validation pipelines to generate reliable benchmarking datasets, significantly accelerating model evaluation and improving confidence in system outputs}
+\resumeItemListEnd
+
+\resumeSubheading
+{NDT Technologies Inc.}{May 2025 -- Aug 2025}
+{Software Engineering Intern}{Montreal, QC, Canada}
+\resumeItemListStart
+\resumeItem{Enabled automated analysis of 10,000+ test results per day by developing \textbf{C++} pipeline linking tests to \textbf{MySQL}}
+\resumeItem{Built  data visualization \textbf{PHP} web pages with dynamic filtering, pagination, and search, handling 15M+ records}
+\resumeItem{Cut real-time laser calibration errors by 35\% by adding a \textbf{C++} outlier-filtering feature to line-detection software}
+\resumeItem{Upgraded \textbf{C/C++} application from GTK3 to GTK4, enhancing performance and maintainability through refactoring over 25K lines of code}
+\resumeItemListEnd
+
+%\resumeSubheading
+%{Full-Stack Developer}{Mar 2024 -- Apr 2025}
+%{Green Olive Organization}{Montreal, QC, Canada}
+%\resumeItemListStart
+%\resumeItem{Developed full-stack Next.js platform with PostgreSQL, achieving \textbf{\textless200ms} page loads and handling \textbf{200+} users}
+%\resumeItem{Reduced admin workflow time by over \textbf{40\%} by implementing NextAuth authentication and role-based access}
+%\resumeItem{Cut query latency by \textbf{60\%} for event and user data retrieval with optimized REST API endpoints using Prisma}
+%\resumeItemListEnd
+
+\resumeSubheading
+{NDT Technologies Inc.}{Jun 2024 -- Aug 2024}
+{Software Engineering Intern}{Montreal, QC, Canada}
+\resumeItemListStart
+
+\resumeItem{Replaced a subscription-based tool and improved accounting data search efficiency by over 60\% by designing and developing an internal \textbf{C++} data visualization tool, integrated with a \textbf{MySQL} database}
+\resumeItem{Reduced manual labor by 93\% with \textbf{PowerShell} scripts for automating file search, organization and manipulation}
+\resumeItem{Developed reusable \textbf{SQL} queries to automate MySQL data workflows, improving query performance by 200\%}
+
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubHeadingListEnd
+
+% \section{Achievements}
+% \resumeSubHeadingListStart
+% \resumeProjectHeading
+% {\textbf{JACHacks 2025 -- MLH GoDaddy Challenge, 1st Place} $|$ \emph{(\textbf{100+} Participants)}}{Apr 2025}
+% \resumeItemListStart
+% \resumeItem{\textbf{Built} a full-stack project in under \textbf{24 hours}, outperforming \textbf{30+} teams.}
+% \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{LeagueOfStudies (JACHacks 2025)} $|$ \emph{Next.js, TypeScript, Supabase, PostgreSQL, Gemini}}{
+	\underline{\href{https://github.com/BagetTeam/LeagueOfStudies}{GitHub}} $|$ \underline{\href{https://www.ihatestudying.study}{Demo}}
+}
+\resumeItemListStart
+\resumeItem{Won \textbf{1st Place} in the \textbf{MLH GoDaddy Challenge at JACHacks}, outperforming 100+ participants}
+\resumeItem{Engineered a multiplayer studying web application using \textbf{Next.js}, featuring death-match and cooperation modes}
+%\resumeItem{Integrated Gemini 2.5 Flash for custom question generation from text/PDF to populate content automatically}
+\resumeItem{Automated question generation from PDF/text using Gemini 2.5 Flash to accelerate content creation}
+% \resumeItem{Managed user identity and data persistence by integrating Auth0 authentication and a \textbf{PostgreSQL} database}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{OmniClaw} $|$ \emph{Python, FastAPI, MCP, React, Web Scraping (Playwright, BeautifulSoup), API Integration}}{
+	\underline{\href{https://github.com/Benjamincf0/omniclaw}{GitHub}}
+}
+\resumeItemListStart
+\resumeItem{Engineered a \textbf{FastAPI} and \textbf{MCP} orchestrator to extract and serve legacy portal student data via multi-LLM routing}
+%\resumeItem{Engineered a scalable AI orchestrator using FastAPI and Model Context Protocol (MCP) to extract live data from a legacy portal and dynamically route queries across OpenAI, Claude, and Gemini.}
+%\resumeItem{Engineered a FastAPI backend with web scraping and MCP tooling to unify and serve student data across clients}
+\resumeItem{Developed a cross-platform conversational AI (Web, Discord, CLI) unifying fragmented academic data}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Internify} $|$ \emph{Next.js, TypeScript, Browserbase, Stagehand, Bun, GPT}}{
+	\underline{\href{https://github.com/Benjamincf0/aipply}{GitHub}}
+}
+\resumeItemListStart
+\resumeItem{Designed a \textbf{Next.js} web application automating job search and submission, reducing manual work by 90\%}
+\resumeItem{Architected a GPT-5-mini agent that parses and autofills multi-step job forms (\textless5\% error) with Browserbase}
+% \resumeItem{Architected an AI-powered agent using GPT-5-mini to parse and autofill multi-step job forms with \textless5\% error rate}
+% \resumeItem{Implemented user profiling and real-time WebSocket-based agent visualization for \textbf{Browserbase} cloud sessions}
+\resumeItemListEnd
+
+
+% \resumeProjectHeading
+% {\textbf{Mathracer} $|$ \emph{Next.js, React, TypeScript, TailwindCSS, C\#, .NET (Signal R)}}{
+% 	\underline{\href{https://github.com/BagetTeam/mathracer}{GitHub}} $|$ \underline{\href{https://mathracer-five.vercel.app/game}{Demo}}
+% }
+
+% \resumeItemListStart
+% \resumeItem{Developed a web application for a real-time competitive math game using \textbf{Next.js} and \textbf{ASP.NET SignalR}}
+% \resumeItem{Managed server-side lobby data storage and multiplayer state management through WebSockets and REST APIs}
+% \resumeItem{Designed a scalable real-time lobby system, enabling smooth gameplay with 100\% uptime during peak usage}
+% \resumeItem{Implemented RPCs with \textless100ms latency for client-server communication and synchronization across users }
+% \resumeItemListEnd
+
+
+% \resumeProjectHeading
+% {\textbf{CheeseOps} $|$ \emph{Java, Gradle, JavaFX, Cucumber (BDD), JUnit, Umple (UML \& State Machines)}}{
+% 	\underline{\href{https://github.com/BagetTeam/CheeseOps}{GitHub}}
+% }
+% \resumeItemListStart
+% \resumeItem{Built a multi-role supply chain platform coordinating farmers, inventory, processing, and B2B sales using \textbf{Java}}
+% \resumeItem{Designed rigorous domain models and workflows to ensure correctness across complex business operations}
+% \resumeItem{Built a clean, maintainable and testable MVC architecture validated through automated behavior-driven tests}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{RoboDelivery} $|$ \emph{Python, Raspberry PI, BrickPI}}{
+% 	\underline{\href{https://github.com/BagetTeam/bakers-pi-final}{GitHub}}
+% }
+% \resumeItemListStart
+% \resumeItem{Built a robot in \textbf{Python (BrickPi)} with autonomous navigatation using line tracking and waypoint state logic}
+% \resumeItem{Designed a real-time gyro PID control loop, correcting drift and heading errors, to maintain precise motion control}
+% \resumeItem{Developed sensor-driven detection logic enabling automated room localization and package delivery}
+% \resumeItemListEnd
+
+%\resumeProjectHeading
+%{\textbf{Mathlympics} $|$ \emph{Dart, Flutter, Supabase (Authentication, Database), PostgreSQL}}{
+%	\underline{\href{https://github.com/BagetTeam/Mathlympics}{GitHub}}
+%}
+%\resumeItemListStart
+%\resumeItem{Engineered a competitive mobile math game with Flutter for cross-platform deployment on iOS and Android}
+%\resumeItem{Integrated authentication with Supabase Auth and PostgreSQL, ensuring secure, low-latency data access}
+%\resumeItem{Built and optimized a TensorFlow Lite neural network for low latency, real-time character and digit recognition}
+%\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	      \textbf{Programming Languages}{: Python, Java, C/C++, TypeScript, JavaScript, C\#, PHP} \\
+	      \textbf{Frameworks}{: React, Next.js, Vue, Vite, TailwindCSS, Flutter} \\
+	      \textbf{Backend / Databases}{: FastAPI, Spring Boot, .NET, MySQL, PostgreSQL, MongoDB, Supabase} \\
+	      \textbf{Tools / Platforms}{: Git, CI/CD, AWS, Linux, MCP, TCP/IP, Docker, Gradle, Cucumber} \\
+        %\textbf{Languages}{: English (native), French (native), Mandarin (intermediate), Cantonese (intermediate)}
+	      }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
