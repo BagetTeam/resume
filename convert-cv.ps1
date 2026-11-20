@@ -63,6 +63,8 @@ try {
     )
     function Invoke-PdfLaTeX {
         param([int]$Pass)
+        # Windows PowerShell treats redirected stderr as errors, even for compiler warnings.
+        $ErrorActionPreference = "Continue"
         $output = & pdflatex @pdfArgs 2>&1
         if ($LASTEXITCODE -ne 0) {
             $output | Select-Object -Last 40 | ForEach-Object { Write-Host $_ }
