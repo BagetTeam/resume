@@ -3,3 +3,6 @@
 *.jpg
 *.docx
 *.doc
+!/EwenGueguen.pdf
+.DS_Store*
+.vscode

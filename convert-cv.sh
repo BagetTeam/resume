@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Archive EwenGueguen.pdf from Documents/Jobs into old-resume/, then compile
-# EwenGueguen.tex and place the new PDF in Documents/Jobs.
+# EwenGueguen.tex and place the new PDF in Documents/Jobs (a copy is also kept
+# in this directory).
 # Archive names: EwenGueguen_oldYYYYMM.pdf, then EwenGueguen_oldYYYYMM_2.pdf, _3, ...
 
 set -euo pipefail
@@ -110,5 +111,6 @@ fi
 popd >/dev/null
 
 mkdir -p "$JOBS_DIR"
-mv "$ROOT/$NAME.pdf" "$JOBS_PDF"
+cp "$ROOT/$NAME.pdf" "$JOBS_PDF"
 echo "Wrote $JOBS_PDF"
+echo "Wrote $ROOT/$NAME.pdf"
